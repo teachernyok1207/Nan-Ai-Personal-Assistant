@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+	<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+		<title>NAN-AI</title>
+		<link rel="stylesheet" href="index.css">
+		
+		<!-- Google Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Merriweather&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<main>
+			<!-- App Logo -->
+			<div class="header">
+				<img src="assets/Nan-Ai.png" class="header-logo">
+				<h1 class="header-title">Nan-Ai</h1>
+			</div>
+			
+			<!-- Chat Thread -->
+			<div class="chat-thread">
+				<!-- Chat Human Question -->
+				<!-- <div class="chat-div">
+					<p class="chat-time">Tue 9:47 AM</p>
+					<div class="chat-details">
+						<img class="chat-picture" src="/assets/Bald-Guy.png" alt="Human Profile">
+						<div class="chat-human-message">
+							Hi Nan-Ai! Can you remind me when my next doctor’s appointment is?
+						</div>
+					</div>
+				</div> -->
+				
+				<!-- Chat AI Response -->
+				<div class="chat-div">
+					<p class="chat-time">Tue 9:48 AM</p>
+					<div class="chat-details">
+						<div class="chat-ai-message">
+							Hi Anak! I am your Nan-Ai. Your AI personal assistant. My goal is to remind you and answer your question just like I am responding to my child. 🥰
+						</div>
+						<img class="chat-picture" src="/assets/Nan-Ai.png" alt="Human Profile">
+					</div>
+				</div>
+				
+				<div class="chat-div" id="chat-root"></div>
+			</div>
+			
+			<!-- Chat Message Box -->
+			<form>
+				<textarea class="chat-text-area" id="chatArea" placeholder="Hi Nan-Ai! What's Happening?" required></textarea>
+				<button type="submit" class="chat-button">Ask</button>
+			</form>
+		</main>
+		<script src="index.js" type="module"></script>
+	</body>
+</html>
