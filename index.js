@@ -3,9 +3,9 @@ import { PromptTemplate } from "langchain/prompts"
 import { StringOutputParser } from "langchain/schema/output_parser"
 import { RunnablePassthrough, RunnableSequence } from "langchain/schema/runnable"
 
-import { combineDocs } from "./utils/combineDocs"
-import { retriever } from "./utils/retriever"
-import { formatConversation } from "./utils/formatConversation"
+import { combineDocs } from "/utils/combineDocs"
+import { retriever } from "/utils/retriever"
+import { formatConversation } from "/utils/formatConversation"
 
 const openAIApiKey = import.meta.env.VITE_OPENAI_API_KEY
 const llm = new ChatOpenAI ({ openAIApiKey })
