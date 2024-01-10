@@ -36,7 +36,6 @@ const answerChain = answerPrompt
   .pipe(llm)
   .pipe(new StringOutputParser())
 
-// const chain = standaloneQuestionPrompt.pipe(llm).pipe(new StringOutputParser()).pipe(retriever).pipe(combineDocs).pipe(answerPrompt)
 
 const chain = RunnableSequence.from([
   {
