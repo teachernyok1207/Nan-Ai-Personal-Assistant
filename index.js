@@ -7,7 +7,7 @@ import { combineDocs } from "./utils/combineDocs"
 import { retriever } from "./utils/retriever"
 import { formatConversation } from "./utils/formatConversation"
 
-const openAIApiKey = process.env.OPENAI_API_KEY
+const openAIApiKey = import.meta.env.VITE_OPENAI_API_KEY
 const llm = new ChatOpenAI ({ openAIApiKey })
 
 const standaloneQuestionTemplate = `Based on the conversation history (if applicable) and a question, convert a question into standalone question, conversation history: {conversation_history}
