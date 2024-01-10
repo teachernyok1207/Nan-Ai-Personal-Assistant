@@ -81,7 +81,7 @@ async function progressConversation(){
   const loadingRoot = document.createElement("div")
   loadingRoot.classList.add("chat-div")
   loadingRoot.innerHTML=`
-    <img src="../assets/Loading.gif" class="loading-gif">
+    <img src="./assets/Loading.gif" class="loading-gif">
   `
   chatRoot.appendChild(loadingRoot)
   chatRoot.scrollTop = chatRoot.scrollHeight
@@ -103,7 +103,7 @@ async function progressConversation(){
       <div class="chat-ai-message">
         ${response}
       </div>
-      <img class="chat-picture" src="../assets/Nan-Ai.png" alt="Human Profile">
+      <img class="chat-picture" src="./assets/Nan-Ai.png" alt="Human Profile">
     </div>
   `
   chatRoot.appendChild(newAiBubble)
